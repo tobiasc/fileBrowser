@@ -1,0 +1,28 @@
+<h1>File Browser</h1>
+
+Base folder: <input type="text" ng-model="query.baseFolder"> <button ng-click="getFolder()">Update</button>
+
+<br><br>
+
+Max Entries: <input type="text" ng-model="query.maxEntries">
+
+<br><br>
+
+Current path: <input type="text" ng-model="query.currentPath" disabled="disabled">
+
+<br><br>
+
+API Status: <span>{{query.apiStatus}}<span>
+
+<ul>
+    <li ng-repeat="object in files"><a ng-click="showProperties(object)">{{object.name}} - <span ng-if="object.isFile">File</span><span ng-if="object.isDir">Folder</span></a></li>
+</ul>
+
+<hr>
+
+Name: {{object.name}}<br>
+Created: {{object.ctime}}<br>
+Modified: {{object.mtime}}<br>
+Size: {{object.size}}<br>
+isFile: {{object.isFile}}<br>
+isDir: {{object.isDir}}<br>
