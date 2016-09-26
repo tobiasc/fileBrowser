@@ -1,0 +1,25 @@
+{
+  "name": "file-browser",
+  "version": "0.0.1",
+  "description": "A sample file browser",
+  "repository": "https://github.com/tobiasc/fileBrowser",
+  "license": "MIT",
+  "dependencies": {
+    "async": "^2.0.1",
+    "body-parser": "^1.15.2",
+    "cors": "^2.8.1",
+    "express": "^4.14.0",
+    "lodash": "^4.16.2",
+    "restify": "^4.0.0",
+    "sails": "^0.12.4"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "test": "mocha test/api.spec.js"
+  },
+  "devDependencies": {
+    "assert": "^1.4.1",
+    "mocha": "^3.0.2",
+    "supertest": "^2.0.0"
+  }
+}
